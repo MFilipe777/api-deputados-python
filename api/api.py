@@ -17,9 +17,9 @@ def home():
     return '''<h1>O que eles andam fazendo?</h1>
 <h3>Esta API retorna dados das atividades de alguns deputados.</h3>
 <p>1. Retorna todas as propostas. - /api/v1/propostas/</p>
-<p>2. Retorna todas as propostas filtradas por tipo de proposta - ex: /api/v1/propostas/tipo?Projeto_de_Lei </p>
+<p>2. Retorna todas as propostas filtradas por tipo de proposta - ex: /api/v1/propostas/tipo/Projeto_de_Lei </p>
 <UL>2.1 Os tipos disponiveis são: Proposta_de_Lei e Proposta_de_Emenda_à_Constituição</UL>
-<p>3. Retorna todas as propostas filtradas por autor desejado - ex: /api/v1/propostas/autor?Carla_Zambelli </p>'''
+<p>3. Retorna todas as propostas filtradas por autor desejado - ex: /api/v1/propostas/autor/Carla_Zambelli </p>'''
 
 @app.route('/api/v1/propostas/', methods=['GET'])
 def show_all_proposals():
